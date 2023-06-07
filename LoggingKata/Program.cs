@@ -1,4 +1,5 @@
 ﻿using GeoCoordinatePortable;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -92,7 +93,7 @@ namespace LoggingKata
                 // Now, compare the two using `.GetDistanceTo()`, which returns a double
                 // If the distance is greater than the currently saved distance, update the distance and the two `ITrackable` variables you set above
 
-                logger.LogInfo($"{tacoBell001.Name} and {tacoBell002.Name} are furthest away from each other.");
+                logger.LogInfo($"{tacoBell001.Name} and {tacoBell002.Name} are furthest away from each other. They are {Math.Round(distance * 0.00062)} miles apart.");
         }                                
     }
 }
