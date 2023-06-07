@@ -62,7 +62,7 @@ namespace LoggingKata
                 // Create a new corA Coordinate with your locA's lat and long
                 var corA = new GeoCoordinate();
                 corA.Latitude = locA.Location.Latitude;
-                corA.Longitude = locA.Location.Longitude; 
+                corA.Longitude = locA.Location.Longitude;
 
                 // Now, do another loop on the locations with the scope of your first loop, so you can grab the "destination" location (perhaps: `locB`)
                 // Create a new Coordinate with your locB's lat and long
